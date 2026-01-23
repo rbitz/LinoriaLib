@@ -1091,7 +1091,7 @@ local Templates = { -- TO-DO: do it for missing elements.
     NotifySide = "Left",
     ShowCustomCursor = true,
     UnlockMouseWhileOpen = true,
-    Center = true  -- <--- set this to true to center the title
+    Center = true  
 },
 
 
