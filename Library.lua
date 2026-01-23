@@ -6505,12 +6505,18 @@ end
         BorderColor3 = 'OutlineColor';
     })
 
-    function Window:SetWindowTitle(Title)
-        if typeof(Title) == "string" then
-            Window.Title = Title
-            WindowLabel.Text = Window.Title
-        end
+function Window:SetWindowTitle(Title)
+    if typeof(Title) == "string" then
+        Window.Title = Title
+        WindowLabel.Text = Window.Title
+
+
+        WindowLabel.TextXAlignment = Enum.TextXAlignment.Center
+        WindowLabel.AnchorPoint = Vector2.new(0.5, 0) 
+        WindowLabel.Position = UDim2.new(0.5, 0, 0, 0)
     end
+end
+
 
     function Window:AddTab(Name)
         local Tab = {
