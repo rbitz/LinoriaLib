@@ -6400,14 +6400,15 @@ end
         BorderColor3 = 'AccentColor';
     })
 
-    local WindowLabel = Library:CreateLabel({
-        Position = UDim2.new(0, 7, 0, 0);
-        Size = UDim2.new(0, 0, 0, 25);
-        Text = WindowInfo.Title or '';
-        TextXAlignment = Enum.TextXAlignment.Left;
-        ZIndex = 1;
-        Parent = Inner;
-    })
+local WindowLabel = Library:CreateLabel({
+    Position = UDim2.new(0.5, 0, 0, 0);
+    AnchorPoint = Vector2.new(0.5, 0);
+    Size = UDim2.new(1, -14, 0, 25);  
+    Text = WindowInfo.Title or '';
+    TextXAlignment = Enum.TextXAlignment.Center;
+    ZIndex = 1;
+    Parent = Inner;
+})
 
     local MainSectionOuter = Library:Create('Frame', {
         BackgroundColor3 = Library.BackgroundColor;
