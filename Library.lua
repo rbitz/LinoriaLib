@@ -1080,19 +1080,20 @@ end))
 --// Templates \\--
 local Templates = { -- TO-DO: do it for missing elements.
     --// Window \\--
-    Window = {
-        Title = "No Title",
-        AutoShow = false,
-        Position = UDim2.fromOffset(175, 50),
-        Size = UDim2.fromOffset(0, 0),
-        AnchorPoint = Vector2.zero,
-        TabPadding = 1,
-        MenuFadeTime = 0.2,
-        NotifySide = "Left",
-        ShowCustomCursor = true,
-        UnlockMouseWhileOpen = true,
-        Center = false
-    },
+   Window = {
+    Title = "No Title",
+    AutoShow = false,
+    Position = UDim2.fromOffset(175, 50),
+    Size = UDim2.fromOffset(0, 0),
+    AnchorPoint = Vector2.zero,
+    TabPadding = 1,
+    MenuFadeTime = 0.2,
+    NotifySide = "Left",
+    ShowCustomCursor = true,
+    UnlockMouseWhileOpen = true,
+    Center = true  -- <--- set this to true to center the title
+},
+
 
     --// Elements \\--
     Video = {
