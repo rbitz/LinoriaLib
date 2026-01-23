@@ -54,17 +54,17 @@ local ThemeManager = {} do
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
-    ["Default"] = {
-        1,
-        {
-            FontColor = "ffffff",
-            MainColor = "120000",
-            AccentColor = "ff1e1e",
-            BackgroundColor = "080000",
-            OutlineColor = "3a0000"
-        }
+['Default'] = {
+    1,
+    {
+        FontColor = "ffffff",
+        MainColor = "120000",
+        AccentColor = "ff1e1e",
+        BackgroundColor = "080000",
+        OutlineColor = "3a0000"
     }
-}
+},
+
 
 		['BBot']          = { 2, { FontColor = "ffffff", MainColor = "1e1e1e", AccentColor = "7e48a3", BackgroundColor = "232323", OutlineColor = "141414" } },
 		['Fatality']      = { 3, { FontColor = "ffffff", MainColor = "1e1842", AccentColor = "c50754", BackgroundColor = "191335", OutlineColor = "3c355d" } },
